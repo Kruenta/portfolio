@@ -1,0 +1,10 @@
+input = open('INPUT.txt', 'r')
+content = input.read().split()
+first = int(content[0])
+second = int(content[1])
+last = int(content[2])
+out = str(first + second - last) if first + second - last >= 0 else 'Impossible'
+output = open('OUTPUT.txt', 'w')
+output.write(out)
+output.close()
+input.close()

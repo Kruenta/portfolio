@@ -1,0 +1,8 @@
+input_file = open('INPUT.txt', 'r')
+content = input_file.read().split()
+d = int(content[1]) - int(content[0])
+out = int(content[0]) + d * (int(content[-1]) - 1)
+output = open('OUTPUT.txt', 'w')
+output.write(str(out))
+output.close()
+input_file.close()

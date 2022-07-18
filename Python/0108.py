@@ -1,0 +1,6 @@
+input = open('INPUT.txt', 'r')
+content = input.read()
+output = open('OUTPUT.txt', 'w')
+output.write(content)
+output.close()
+input.close()
